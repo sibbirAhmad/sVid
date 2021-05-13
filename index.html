@@ -47,6 +47,20 @@ div {
   padding: 20px;
   
 }
+button {
+  width: 80%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+}
 body {
   background-color: black;
   text-align: center;
@@ -64,15 +78,17 @@ body {
 <p>সহজ এবং বোধগম্যতার খোঁজে</p>
 
 <div>
-  <form  action="loginProcess.php" method="post">
-    <input type="text" id="fname" name="number" placeholder="আপনার নাম্বার লিখুন">
-    <input type="password" id="lname" name="pin" placeholder="আপনার পিন লিখুন">
-  <input type="submit" value="প্রবেশ করুন">
-
-  </form>
+ <button class="submit" onclick="myFunction()">ডাউনলোড</button>
 </div>
 
 
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  window.open("https://sibbirahmad.github.io/sVid/");
+}
+</script>
 
 
 
